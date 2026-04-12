@@ -1,6 +1,6 @@
 ## 1. Paigalduskeskkond ja ligipääs
 
-## Kasutatud keskkond: WSL2 + UBUNTU.
+### Kasutatud keskkond: WSL2 + UBUNTU.
 
 ## Ülesande alguses lõin kasutaja nimega kasutaja, alles hiljem märkasin et kasutajanimes peab olema minu nimi.
 ## Lahendusena ma hetkel lisasin käsuga sudo adduser enda nimelise kasutaja. 
