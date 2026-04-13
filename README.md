@@ -12,11 +12,11 @@ Keskkonnale pääseb ligi konsooli kaudu.
 
 **Kasutatud käsud:**
 
-- `sudo apt update` -- uuendus
-- `sudo apt install mariadb-server` -- MariaDB allalaadimine
-- `mariadb --version` -- MariaDB versiooni kuvamine
-- `sudo systemctl restart mariadb` -- Teenuse restart (et muudatused rakenduksid)
-- `sudo systemctl status mariadb` -- Teenuse oleku kontrollimine (aktiivne v ei)
+`sudo apt update` -- uuendus
+`sudo apt install mariadb-server` -- MariaDB allalaadimine
+`mariadb --version` -- MariaDB versiooni kuvamine
+`sudo systemctl restart mariadb` -- Teenuse restart (et muudatused rakenduksid)
+`sudo systemctl status mariadb` -- Teenuse oleku kontrollimine (aktiivne v ei)
 
 **Kas teenud käivitub automaatselt?**  
 Jah, sest `systemctl status mariadb` käsk kuvab et teenus on enabled ja aktiivne.
@@ -27,23 +27,23 @@ Jah, sest `systemctl status mariadb` käsk kuvab et teenus on enabled ja aktiivn
 
 ## 3. MariaDB turvaseadistus
 
-- Unix_Socket = Yes
-- Remove anonymus Users = Yes
-- Disallow remotely root login = Yes
-- Remove test database and access to it = Yes
-- Reload privilege tables now = Yes
+Unix_Socket = Yes
+Remove anonymus Users = Yes
+Disallow remotely root login = Yes
+Remove test database and access to it = Yes
+Reload privilege tables now = Yes
 
 
 ## 4. Võrguturve
 
-- `bind-address = 127.0.01`   - Oli olemas, ei muutnud midagi
-- `local-infile = 0`          - Pidin juurde lisama, oli failist puudu
-- `skip-name-resolve`         - Võtsin ainult `#` eest ehk tegin selle rea aktiivseks.
+`bind-address = 127.0.01`   -- Oli olemas, ei muutnud midagi
+`local-infile = 0`          -- Pidin juurde lisama, oli failist puudu
+`skip-name-resolve`         -- Võtsin ainult `#` eest ehk tegin selle rea aktiivseks.
 
 
 ## 5. MariaDB kontroll
 
-- `ss -tlnp | grep 3306` -- Kontrollib, kas MariaDB kasutab seda porti. (`ss -tlnp | grep mariadb` ei andnud mul tulemust)
+`ss -tlnp | grep 3306` -- Kontrollib, kas MariaDB kasutab seda porti. (`ss -tlnp | grep mariadb` ei andnud mul tulemust)
 
 
 ## 6. Kuvatõmmised
