@@ -2,7 +2,7 @@
 
 ### Kasutatud keskkond: WSL2 + UBUNTU.
 
-### Ülesande alguses lõin kasutaja nimega kasutaja, alles hiljem märkasin et kasutajanimes peab olema minu nimi.
+#### Ülesande alguses lõin kasutaja nimega kasutaja, alles hiljem märkasin et kasutajanimes peab olema minu nimi.
 ### Lahendusena ma hetkel lisasin käsuga sudo adduser enda nimelise kasutaja. 
  
 ### Keskkonnale pääseb ligi konsooli kaudu.
